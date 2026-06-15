@@ -335,7 +335,7 @@ export default function App() {
             We're building the full version — unlimited deals, cash buyer tools, and more. Join the waitlist to be first in.
           </div>
           <iframe
-            src="https://tally.so/r/5BODXd?transparentBackground=1"
+            src="https://tally.so/r/5BODXd?"
             width="100%"
             height="180"
             frameBorder="0"
