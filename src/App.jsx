@@ -147,8 +147,8 @@ export default function App() {
 
   const arv = parseFloat(inputs.arv) || 0;
   const repairs = parseFloat(inputs.repairs) || 0;
-  const assignmentFee = parseFloat(inputs.assignmentFee) || 5000;
-  const closingCosts = parseFloat(inputs.closingCosts) || 3000;
+  const assignmentFee = inputs.assignmentFee !== "" ? parseFloat(inputs.assignmentFee) || 0 : 5000;
+  const closingCosts = inputs.closingCosts !== "" ? parseFloat(inputs.closingCosts) || 0 : 3000;
   const askingPrice = parseFloat(inputs.askingPrice) || 0;
   const mao70 = arv * 0.7 - repairs;
   const maoWholesaler = mao70 - assignmentFee - closingCosts;
@@ -322,6 +322,28 @@ export default function App() {
 
         <div style={{ color: C.muted, fontSize: 11, marginTop: 16, textAlign: "center" }}>
           Based on the 70% rule · Deals saved to your device
+        </div>
+
+        <div style={{ marginTop: 32, background: C.surface, border: `1px solid ${C.border}`, borderRadius: 10, padding: 20 }}>
+          <div style={{ color: C.green, fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 6 }}>
+            Coming Soon
+          </div>
+          <div style={{ fontWeight: 800, fontSize: 18, marginBottom: 6 }}>
+            Get early access
+          </div>
+          <div style={{ color: C.muted, fontSize: 13, marginBottom: 16, lineHeight: 1.5 }}>
+            We're building the full version — unlimited deals, cash buyer tools, and more. Join the waitlist to be first in.
+          </div>
+          <iframe
+            src="https://tally.so/r/5BODXd?transparentBackground=1"
+            width="100%"
+            height="180"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            title="Waitlist"
+            style={{ borderRadius: 8 }}
+          />
         </div>
       </div>
     </div>
