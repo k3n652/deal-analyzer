@@ -332,7 +332,7 @@ export default function App() {
             Get early access
           </div>
           <div style={{ color: C.muted, fontSize: 13, marginBottom: 16, lineHeight: 1.5 }}>
-            We're building the full version — unlimited deals, cash buyer tools, and more. Join the waitlist to be first in.
+            We're building the full version — unlimited deals, cash buyer tools, and more. Join the waitlist to be one of the first to know when it drops.
           </div>
           <iframe
             src="https://tally.so/r/5BODXd?"
